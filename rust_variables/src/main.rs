@@ -4,13 +4,13 @@ static FIRST_STATIC_VARIABLE: i8 = 21;
 fn main() {
     let x = 5;
 
-    println!("The value of x is: {}", x);
+    println!("The value and memory ref of x are: {}, {:p}", x, &x);
 
     let x = x + 1;
 
     let x = x * 2;
 
-    println!("The value of x is: {}", x);
+    println!("The value and memory ref of x are: {}, {:p}", x, &x);
 
     let spaces = "    ";
 
